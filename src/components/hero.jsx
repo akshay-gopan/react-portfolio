@@ -2,7 +2,7 @@ import { useSpring, animated } from "react-spring";
 import Icons from "./icons";
 
 function Hero() {
-  const textAniamtion = useSpring({
+  const textAnimation = useSpring({
     from: { transform: "translateY(50px)", opacity: 0 },
     to: { transform: "translateY(0px)", opacity: 1 },
     delay: 300,
@@ -10,32 +10,32 @@ function Hero() {
 
   return (
     <>
-      <div class="flex flex-col justify-center align-middle bg-[url('images/hero-bg.jpg')] bg-opacity-35 bg-cover bg-center h-screen pt-20 -z-20">
+      <div class="flex flex-col justify-center items-center bg-[url('images/hero-bg.jpg')] bg-opacity-35 bg-cover bg-center min-h-screen pt-20 relative">
         <animated.div
-          style={textAniamtion}
-          class="flex flex-col justify-center"
+          style={textAnimation}
+          class="flex flex-col justify-center items-center px-4 md:px-8"
         >
-          <div class="self-center">
-            <h1 class="pt-[50px] text-[80px] font-medium  text-center leading-[88px]">
+          <div class="text-center">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-medium leading-tight md:leading-snug">
               Hey, I'm Akshay Gopan
             </h1>
           </div>
-          <div class="self-center ">
-            <p class=" pt-[40px] text-[20px] font-normal text-center leading-[30px] ">
-              Most calendars are designed for teams. Slate is designed for{" "}
-              <br /> freelancers who want a simple way to plan their schedule.
+          <div class="text-center mt-6">
+            <p class="text-lg md:text-xl lg:text-2xl font-medium leading-relaxed">
+              Welcome to my Portfolio. <br />I Craft Innovative Digital
+              Experiences with Code, Creativity, and Precision!
             </p>
           </div>
-          <div class="flex mt-[50px] self-center  gap-9">
-            <button class="py-[10px] px-[30px]  font-medium bg-violet-500 text-white rounded-sm self-center">
-              Resume
+          <div class="flex flex-col md:flex-row mt-12 gap-4 md:gap-6">
+            <button class="py-2 px-6 md:py-3 md:px-8 font-medium bg-violet-500 text-white rounded-sm">
+              <a href="documents/Akshay Gopan Resume.pdf" download>Resume</a>
             </button>
-            <button class="py-[10px] px-[30px] border border-black rounded-sm self-center">
+            <button class="py-2 px-8 md:py-3 md:px-8 border border-black rounded-sm">
               Contact
             </button>
           </div>
         </animated.div>
-        <div class="w-1/3 mt-10 h-[1px] bg-gray-900 self-center opacity-35"></div>
+        <div class="w-2/3 md:w-1/2 mt-10 h-[1px] bg-gray-900 self-center opacity-35"></div>
         <Icons />
       </div>
     </>

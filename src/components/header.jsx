@@ -2,7 +2,7 @@ function Header() {
   return (
     <>
       <nav>
-        <div class="flex flex-row justify-center h-24 top-0 left-0 w-full fixed bg-white drop-shadow-sm z-10">
+        <div class="flex flex-row justify-center h-20 top-0 left-0 w-full fixed bg-white drop-shadow-sm z-10">
           {/* <div class="self-center">
                         <img src="images/logo.png" alt="logo" />
                     </div> */}

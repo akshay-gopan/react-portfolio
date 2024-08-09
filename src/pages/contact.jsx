@@ -37,29 +37,31 @@ function Contact() {
 
   return (
     <>
-      <div class="flex flex-col  align-middle pt-24 mb-24 mt-5 bg-[#fafafa] h-screen w-screen fixed">
-        <div class="w-1/2 self-center">
-          <h2 class="text-center text-[42px] font-medium ">CONTACT</h2>
-          <p class=" mt-7 text-center text-[20px] font-normal leading-5">
-            Most calendars are designed for teams. Slate is designed for
-            freelancers who want a simple way to plan their schedule.
+    <div  class="min-h-screen flex flex-col justify-between">
+      <div class="flex flex-col items-center pt-24 mt-5 bg-[#fafafa] w-full">
+        <div class="w-full max-w-3xl">
+          <h2 class="text-center text-4xl md:text-5xl font-medium">CONTACT</h2>
+          <p class="mt-7 text-center text-lg p-4 md:text-xl font-normal leading-6 md:leading-5">
+            Feel free to reach out! I'm always open to connecting, whether you
+            have a question, an idea, or just want to chat about tech
           </p>
         </div>
+
         <animated.div
           style={textAniamtion}
-          class=" flex flex-wrap mt-10 self-center gap-16"
+          class="flex flex-col justify-center align-middle items-center sm:flex-row mt-10 gap-8 sm:gap-16 w-full max-w-3xl"
         >
-          <div>
+          <div class="w-full sm:w-auto flex justify-center">
             <Card
               icon={<MdEmail />}
               label="Email"
               detail="akshaygopan377@gmail.com"
             />
           </div>
-          <div>
+          <div class="w-full sm:w-auto flex justify-center">
             <Card icon={<FaPhoneAlt />} label="Phone" detail="+91 8330059037" />
           </div>
-          <div>
+          <div class="w-full sm:w-auto flex justify-center">
             <Card
               icon={<FaLocationDot />}
               label="Location"
@@ -67,21 +69,22 @@ function Contact() {
             />
           </div>
         </animated.div>
-        <div class="w-1/2 mt-10 h-[1px] bg-gray-900 self-center opacity-35"></div>
-        <div class="flex justify-center align-middle self-center gap-16">
-          <div>
-            <animated.button
-            style={buttonAnimation}
-            class="py-[10px] px-[30px] mt-7 font-semibold bg-violet-500 text-white rounded-sm self-center"
 
+        <div class="w-full max-w-3xl mt-10 h-[1px] bg-gray-900 self-center opacity-35"></div>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-16 mt-5">
+          <animated.button
+            style={buttonAnimation}
+            class="py-2 px-6 mt-7 font-semibold bg-violet-500 text-white rounded-sm"
           >
-            Download Resume
-          </animated.button></div>
-          <div><Icons /></div>
+            <a href="documents/Akshay Gopan Resume.pdf" download>Download Resume</a>
+          </animated.button>
+          <Icons />
         </div>
-        <footer class="flex justify-center align-baseline mt-28 w-screen h-10 p-3 bg-[#9993]">
-          <p>@copyright 2024, <span class="text-md font-semibold"> Made by Akshay Gopan</span></p>
-        </footer>
+        </div>
+         <footer class="flex justify-center w-full mt-4 h-10 p-3 bg-[#9993]">
+    <p>© 2024, <span class="text-md font-semibold">Made by Akshay Gopan</span></p>
+  </footer>
       </div>
     </>
   );

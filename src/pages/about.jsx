@@ -28,91 +28,78 @@ function About() {
 
   return (
     <>
-      <div class="flex flex-col justify-center align-middle pt-24 pb-24 mt-5 h-screen bg-[#fafafa] -z-20 fixed">
-        <div class="w-1/2 self-center">
-          <h2 class="text-center text-[42px] font-medium mt-5">ABOUT</h2>
-          <p class=" mt-5 text-center text-[20px] font-normal leading-5">
+      <div class="flex flex-col items-center pt-28 bg-[#fafafa] min-h-screen px-4">
+        <div class="w-full max-w-4xl text-center">
+          <h2 class="text-4xl md:text-5xl font-medium">ABOUT</h2>
+          <p class="mt-5 text-lg md:text-xl font-normal leading-6">
             Here you will find more information about me, what I do, and my
-            current skills mostly in terms of programming and technology
+            current skills mostly in terms of programming and technology.
           </p>
         </div>
-        <div class="flex flex-wrap justify-center align-middle">
+
+        <div class="flex flex-col md:flex-row justify-center  mt-5 w-full max-w-7xl md:gap-10">
           <animated.div
             style={textAnimation}
-            class="w-1/2 px-20 py-16 self-center "
+            class="w-full md:w-1/2 px-2 md:px-6 py-8 md:py-10 text-center md:text-left"
           >
             <p class="text-2xl font-bold mb-3">Get to know me</p>
-            <div>
-              <p class=" leading-relaxed">
-                I'm a Frontend Focused Web Developer building and managing the
-                Front-end of Websites and Web Applications that leads to the
-                success of the overall product. Check out some of my work in the
-                Projects section. I also like sharing content related to the
-                stuff that I have learned over the years in Web Development so
-                it can help other people of the Dev Community. Feel free to
-                Connect or Follow me on my Linkedin and Instagram where I post
-                useful content related to Web Development and Programming I'm
-                open to Job opportunities where I can contribute, learn and
-                grow. If you have a good opportunity that matches my skills and
-                experience then don't hesitate to contact me
-              </p>
-            </div>
+            <p class="leading-6 text-base">
+              I'm a final-year B.Tech Computer Science student at Saintgits
+              College of Engineering, Kottayam. I have a strong passion for web
+              development and Python programming. Over the course of my studies,
+              I've honed my skills in building dynamic web applications using
+              modern frameworks like React, React Native, and Tailwind CSS. I'm
+              enthusiastic about continuous learning and constantly seeking
+              opportunities to expand my technical expertise. Whether it’s
+              through contributing to team projects, participating in
+              hackathons, or building my own projects, I’m driven by the desire
+              to create impactful and innovative solutions. Feel free to explore
+              my portfolio to see some of the projects I've worked on, and don't
+              hesitate to reach out if you'd like to collaborate or learn more
+              about my work!
+            </p>
+            <button
+              class="py-2 px-6 mt-5 font-semibold bg-violet-500 text-white rounded-sm"
+              onClick={handleClick}
+            >
+              See my projects
+            </button>
           </animated.div>
-          <animated.div style={skillAnimation} class="w-1/2 p-16 self-center">
-            <p class="text-2xl font-bold mb-4">Skills</p>
-            <div class="flex flex-wrap">
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                Python
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                Javascript
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                React
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                React Native
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                Node.js
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                Expres.js
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                Tailwind CSS
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                SASS
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                HTML
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                MySQL
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                MongoBD
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                Firebase
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                Git
-              </p>
-              <p class="mb-6 mr-6 px-4 py-3 text-[#666] bg-[#9993] font-semibold text-lg rounded-md">
-                GitHub
-              </p>
+
+          <animated.div
+            style={skillAnimation}
+            class="w-full md:w-1/2 p-4 md:p-6 mt-2"
+          >
+            <p class="text-2xl font-bold mb-4 text-center md:text-left">
+              Skills
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start">
+              {[
+                "Python",
+                "Javascript",
+                "React",
+                "React Native",
+                "Node.js",
+                "Express.js",
+                "Tailwind CSS",
+                "SASS",
+                "HTML",
+                "MySQL",
+                "MongoDB",
+                "Firebase",
+                "Git",
+                "GitHub",
+              ].map((skill) => (
+                <p
+                  key={skill}
+                  class="mb-4 mr-4 px-4 py-2 text-[#666] bg-[#9993] font-semibold text-lg rounded-md"
+                >
+                  {skill}
+                </p>
+              ))}
             </div>
           </animated.div>
         </div>
-        <animated.button
-          style={buttonAnimation}
-          class="py-[10px] px-[30px]  font-semibold bg-violet-500 text-white rounded-sm self-center"
-          onClick={handleClick}
-        >
-          See my projects
-        </animated.button>
       </div>
     </>
   );

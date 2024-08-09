@@ -13,13 +13,13 @@ function Header() {
               Home
             </Link>
             <Link
-              to="/react-portfolio/#/about"
+              to="/about"
               class=" px-3 py-2 text-[17px] hover:underline underline-offset-[10px] "
             >
               About
             </Link>
             <Link
-              to="#/projects"
+              to="/projects"
               class=" px-3 py-2 text-[17px] hover:underline underline-offset-[10px]  "
             >
               Project

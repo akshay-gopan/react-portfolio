@@ -9,9 +9,9 @@ import Contact from "./pages/contact";
 function App() {
   return (
     <>
-     
-      <Router>
       <Header />
+      <Router basename="/react-portfolio">
+      
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

@@ -7,25 +7,25 @@ function Header() {
           
           <div class="flex self-center gap-7">
             <Link
-              to="/"
+              to="/react-portfolio"
               class=" px-3 py-2 text-[17px]  underline-offset-[10px] hover:underline"
             >
               Home
             </Link>
             <Link
-              to="/about"
+              to="/react-portfolio/#/about"
               class=" px-3 py-2 text-[17px] hover:underline underline-offset-[10px] "
             >
               About
             </Link>
             <Link
-              to="/projects"
+              to="/react-portfolio/#/projects"
               class=" px-3 py-2 text-[17px] hover:underline underline-offset-[10px]  "
             >
               Project
             </Link>
             <Link
-              to="/contact"
+              to="/react-portfolio/#/contact"
               class=" px-3 py-2 text-[17px] hover:underline underline-offset-[10px] "
             >
               Contact

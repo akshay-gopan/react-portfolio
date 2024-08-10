@@ -1,4 +1,5 @@
 import { useSpring, animated } from "react-spring";
+import { useNavigate } from "react-router-dom";
 import Icons from "./icons";
 
 function Hero() {
@@ -8,16 +9,19 @@ function Hero() {
     delay: 300,
   });
 
+  const navigate = useNavigate();
+  const handleClick = () => navigate("/contact");
+
   return (
     <>
-      <div class="flex flex-col justify-center items-center bg-[url('images/hero-bg.jpg')] bg-opacity-35 bg-cover bg-center min-h-screen pt-20 relative">
+      <div class="flex flex-col justify-center items-center bg-[url('/images/hero-bg.jpg')] bg-opacity-35 bg-cover bg-center min-h-screen pt-20 relative">
         <animated.div
           style={textAnimation}
           class="flex flex-col justify-center items-center px-4 md:px-8"
         >
           <div class="text-center">
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-medium leading-tight md:leading-snug">
-              Hey, I'm Akshay Gopan
+              Hey, I'm Akshay&nbsp;Gopan
             </h1>
           </div>
           <div class="text-center mt-6">
@@ -30,7 +34,7 @@ function Hero() {
             <button class="py-2 px-6 md:py-3 md:px-8 font-medium bg-violet-500 text-white rounded-sm">
               <a href="documents/Akshay Gopan Resume.pdf" download>Resume</a>
             </button>
-            <button class="py-2 px-8 md:py-3 md:px-8 border border-black rounded-sm">
+            <button class="py-2 px-8 md:py-3 md:px-8 border border-black rounded-sm" onClick={handleClick}>
               Contact
             </button>
           </div>

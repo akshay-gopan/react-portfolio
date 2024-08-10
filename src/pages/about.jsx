@@ -31,10 +31,19 @@ function About() {
       <div class="flex flex-col items-center pt-28 bg-[#fafafa] min-h-screen px-4">
         <div class="w-full max-w-4xl text-center">
           <h2 class="text-4xl md:text-5xl font-medium">ABOUT</h2>
-          <p class="mt-5 text-lg md:text-xl font-normal leading-6">
+          {/* <p class="mt-5 text-lg md:text-xl font-normal leading-6">
             Here you will find more information about me, what I do, and my
             current skills mostly in terms of programming and technology.
-          </p>
+          </p> */}
+          <div class="flex justify-center mt-5">
+            <img
+              src="images/profileimage.png"
+              alt="image"
+              width={250}
+              height={250}
+              class="rounded-full"
+            />
+          </div>
         </div>
 
         <div class="flex flex-col md:flex-row justify-center  mt-5 w-full max-w-7xl md:gap-10">

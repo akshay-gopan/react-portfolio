@@ -69,7 +69,7 @@ function Projects() {
             githubLink:
               "https://github.com/akshay-gopan/weather-app-internship",
           },
-          
+
         ].map((project, index) => (
           <div
             key={index}

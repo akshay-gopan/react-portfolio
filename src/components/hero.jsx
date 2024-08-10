@@ -32,9 +32,14 @@ function Hero() {
           </div>
           <div class="flex flex-col md:flex-row mt-12 gap-4 md:gap-6">
             <button class="py-2 px-6 md:py-3 md:px-8 font-medium bg-violet-500 text-white rounded-sm">
-              <a href="documents/Akshay Gopan Resume.pdf" download>Resume</a>
+              <a href="documents/Akshay Gopan Resume.pdf" download>
+                Resume
+              </a>
             </button>
-            <button class="py-2 px-8 md:py-3 md:px-8 border border-black rounded-sm" onClick={handleClick}>
+            <button
+              class="py-2 px-8 md:py-3 md:px-8 border border-black rounded-sm"
+              onClick={handleClick}
+            >
               Contact
             </button>
           </div>

@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
       <nav>
         <div class="flex flex-row justify-center h-20 top-0 left-0 w-full fixed bg-white drop-shadow-sm z-10">
-          
           <div class="flex self-center gap-4 md:gap-7 lg:gap7">
             <Link
               to="/"
@@ -38,6 +37,3 @@ function Header() {
 }
 
 export default Header;
-
-
-

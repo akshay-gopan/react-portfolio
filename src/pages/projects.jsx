@@ -17,7 +17,7 @@ function Projects() {
 
   return (
     <>
-      <div class="flex flex-col justify-center items-center pt-24 mt-4 bg-[#fafafa] px-4">
+      <div class="flex flex-col justify-center items-center pt-24 mt-4 bg-black text-white px-4">
         <div class="w-full max-w-4xl text-center">
           <h2 class="text-4xl md:text-5xl font-medium">PROJECTS</h2>
           <p class="mt-5 text-lg md:text-xl font-normal leading-6">
@@ -34,7 +34,7 @@ function Projects() {
               "A MERN stack application for tracking and managing personal finances. It includes features like expense tracking, financial reporting, category-wise sorting and user authentication, all within a secure and user-friendly interface.",
             imgSrc: "images/finance-tracker.jpg",
             demoLink: "#",
-            githubLink: "https://github.com/akshay-gopan/mern-expense-tracker",
+            githubLink: "https://github.com/akshay-gopan/finance-tracker-mern",
           },
           {
             title: "Networkk",
@@ -61,7 +61,7 @@ function Projects() {
             githubLink: "https://github.com/akshay-gopan/e-commerce-site",
           },
           {
-            title: "Weather App",
+            title: "Weather Dashboard",
             description:
               "A React-based application utilizing the OpenStreetMap API to provide real-time weather updates. Features include location-based weather forecasts with a user-friendly interface for easy navigation.",
             imgSrc: "images/weather.jpg",
@@ -97,12 +97,12 @@ function Projects() {
               </p>
               <div class="flex gap-4 mt-5">
                 <a href={project.demoLink}>
-                  <button class="py-2 px-4 border bg-violet-500 text-white font-medium rounded-sm">
+                  {/* <button class="py-2 px-4  bg-violet-500 text-white font-medium rounded-sm">
                     Live Demo
-                  </button>
+                  </button> */}
                 </a>
                 <a href={project.githubLink}>
-                  <button class="py-2 px-6 border border-black font-medium rounded-sm">
+                  <button class="py-2 px-6 border border-violet-500  font-medium rounded-sm">
                     GitHub
                   </button>
                 </a>

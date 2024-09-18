@@ -3,7 +3,7 @@ function Header() {
   return (
     <>
       <nav>
-        <div class="flex flex-row justify-center h-20 top-0 left-0 w-full fixed bg-white drop-shadow-sm z-10">
+        <div class="flex flex-row justify-center h-20 top-0 left-0 w-full fixed bg-[#000000] shadow-md shadow-violet-500 z-10 text-white">
           <div class="flex self-center gap-4 md:gap-7 lg:gap7">
             <Link
               to="/"

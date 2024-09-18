@@ -8,30 +8,31 @@ const Icons = () => {
     delay: 300,
   });
 
+
   return (
     <>
       <animated.div
         style={iconAniamtion}
         class=" flex flex-row gap-10 self-center mt-7"
       >
-        <div class="border-[2px] border-black rounded-full p-2 transition-all hover:scale-110 duration-300">
+        <div class=" rounded-full p-2 transition-all hover:scale-125 duration-300">
           <a href="https://github.com/akshay-gopan">
             <FaGithub class="size-7 " />
           </a>
         </div>
-        <div class="border-[2px] border-black rounded-full p-2 transition-all hover:scale-110 duration-300">
+        <div class=" rounded-full p-2 transition-all hover:scale-125 hover: duration-300">
           <a href="https://www.linkedin.com/in/akshaygopanofficial">
-            <FaLinkedinIn class="size-7 " />
+            <FaLinkedinIn class="size-8 " />
           </a>
         </div>
-        <div class="border-[2px] border-black rounded-full p-2 transition-all hover:scale-110 duration-300">
+        <div class=" rounded-full p-2 transition-all hover:scale-125 duration-300">
           <a href="https://x.com/akshay_gopan7">
             <FaXTwitter class="size-7 " />
           </a>
         </div>
-        <div class="border-[2px] border-black rounded-full p-2 transition-all hover:scale-110 duration-300">
+        <div class=" rounded-full p-2 transition-all hover:scale-125 duration-300">
           <a href="https://discord.com/channels/@akshaygopan">
-            <FaDiscord class="size-7 " />
+            <FaDiscord class="size-8 " />
           </a>
         </div>
       </animated.div>

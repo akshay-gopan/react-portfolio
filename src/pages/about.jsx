@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
+import Card2 from "../components/card2";
+
 function About() {
   const navigate = useNavigate();
   const handleClick = () => {
@@ -28,7 +30,7 @@ function About() {
 
   return (
     <>
-      <div class="flex flex-col items-center pt-28 bg-[#fafafa] min-h-screen px-4">
+      <div class="flex flex-col items-center pt-28 bg-black text-white min-h-screen px-4">
         <div class="w-full max-w-4xl text-center">
           <h2 class="text-4xl md:text-5xl font-medium">ABOUT</h2>
           {/* <p class="mt-5 text-lg md:text-xl font-normal leading-6">
@@ -68,7 +70,7 @@ function About() {
               about my work!
             </p>
             <button
-              class="py-2 px-6 mt-5 font-semibold bg-violet-500 text-white rounded-sm"
+              class="py-2 px-6 mt-5 font-semibold bg-violet-500 text-white hover:bg-violet-700 rounded-sm"
               onClick={handleClick}
             >
               See my projects
@@ -101,13 +103,62 @@ function About() {
               ].map((skill) => (
                 <p
                   key={skill}
-                  class="mb-4 mr-4 px-4 py-2 text-[#666] bg-[#9993] font-semibold text-lg rounded-md"
+                  class="mb-4 mr-4 px-4 py-2 text-[#999] hover:text-violet-500 bg-[#9992] font-semibold text-lg rounded-md"
                 >
                   {skill}
                 </p>
               ))}
             </div>
           </animated.div>
+        </div>
+        <div class="flex flex-col justify-center">
+        <div class="text-center">
+        <p class="text-2xl font-bold mb-4 ">
+              Achievements
+            </p>
+        </div>
+          
+          <div class="flex flex-wrap justify-center md:justify-start">
+  {Object.entries({
+    0: {
+      label: "Hackathon Winner",
+      detail:"Hacks'Us 2023 ",
+      host: "Rajagiri School of Engineering and Technology, Ernakulam",
+      img: "/images/hacksus.jpg"
+    },
+    1: {
+      label: "Hackathon Winner",
+      detail:"HackAthene 2024",
+      host: "Jyothi Engineering College, Thrissur",
+      img: "/images/hackathena.jpg"
+    },
+    2: {
+      label: "Hackathon 1st Runnerup",
+      detail:"HackBells 2024",
+      host: "Sree Buddha College of Engineering, Alappuzha",
+      img: "/images/hackbells.png"
+    },
+    3: {
+      label: "Top 5 Team",
+      detail:"Code reCET 2024 ",
+      host: "Govt.College of Engineering, Trivandrum",
+      img: "/images/coderecet.jpg"
+    },
+
+    
+  
+    
+  }).map(([key, {label, detail, host, img}]) => (
+    <p
+      key={key}
+      class="mb-4 mr-4 px-4 py-2  font-semibold text-lg rounded-md"
+    >
+      <Card2 label={label} detail={detail} host={host} img={img}/>
+    </p>
+  ))}
+</div>
+
+          
         </div>
       </div>
     </>

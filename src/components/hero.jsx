@@ -11,10 +11,10 @@ function Hero() {
 
   const navigate = useNavigate();
   const handleClick = () => navigate("/contact");
-
+  // bg-[url('/images/hero-bg.jpg')] bg-opacity-35 bg-cover
   return (
     <>
-      <div class="flex flex-col justify-center items-center bg-[url('/images/hero-bg.jpg')] bg-opacity-35 bg-cover bg-center min-h-screen pt-20 relative">
+      <div class="flex flex-col justify-center items-center bg-black bg-center min-h-screen pt-20 text-white relative">
         <animated.div
           style={textAnimation}
           class="flex flex-col justify-center items-center px-4 md:px-8"
@@ -31,20 +31,20 @@ function Hero() {
             </p>
           </div>
           <div class="flex flex-col md:flex-row mt-12 gap-4 md:gap-6">
-            <button class="py-2 px-6 md:py-3 md:px-8 font-medium bg-violet-500 text-white rounded-sm">
+            <button class="py-2 px-6 md:py-3 md:px-8 font-medium bg-violet-500 text-white rounded-sm hover:bg-violet-700">
               <a href="documents/Akshay Gopan Resume.pdf" download>
                 Resume
               </a>
             </button>
             <button
-              class="py-2 px-8 md:py-3 md:px-8 border border-black rounded-sm"
+              class="py-2 px-8 md:py-3 md:px-8 border border-violet-500 rounded-sm hover:shadow-sm hover:shadow-violet-400"
               onClick={handleClick}
             >
               Contact
             </button>
           </div>
         </animated.div>
-        <div class="w-2/3 md:w-1/2 mt-10 h-[1px] bg-gray-900 self-center opacity-35"></div>
+        <div class="w-2/3 md:w-1/2 mt-10 h-[1px] bg-gray-500 self-center opacity-35"></div>
         <Icons />
       </div>
     </>

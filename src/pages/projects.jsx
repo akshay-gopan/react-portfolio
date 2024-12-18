@@ -64,10 +64,19 @@ function Projects() {
             title: "Weather Dashboard",
             description:
               "A React-based application utilizing the OpenStreetMap API to provide real-time weather updates. Features include location-based weather forecasts with a user-friendly interface for easy navigation.",
-            imgSrc: "images/weather.jpg",
+            imgSrc: "images/weather.png",
             demoLink: "#",
             githubLink:
               "https://github.com/akshay-gopan/weather-app-internship",
+          },
+          {
+            title: "House Price Prediction",
+            description:
+              "A Python-based House Price Prediction Model uses machine learning to estimate property prices from features like location, size, and rooms. It leverages Pandas, Scikit-learn, and Matplotlib for data processing, training, and visualization, showcasing skills in predictive modeling and real estate analytics.",
+            imgSrc: "images/houseprice.jpg",
+            demoLink: "#",
+            githubLink:
+              "https://github.com/akshay-gopan/house-price-prediction-ml",
           },
 
         ].map((project, index) => (

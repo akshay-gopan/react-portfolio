@@ -1,6 +1,8 @@
 import { useSpring, animated } from "react-spring";
 import { useNavigate } from "react-router-dom";
 import Icons from "./icons";
+import Particle from "./particles";
+
 
 function Hero() {
   const textAnimation = useSpring({
@@ -15,6 +17,7 @@ function Hero() {
   return (
     <>
       <div class="flex flex-col justify-center items-center bg-black bg-center min-h-screen pt-20 text-white relative">
+       <Particle />
         <animated.div
           style={textAnimation}
           class="flex flex-col justify-center items-center px-4 md:px-8"

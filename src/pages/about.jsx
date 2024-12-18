@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
 import Card2 from "../components/card2";
+import Particle from "../components/particles";
 
 function About() {
   const navigate = useNavigate();
@@ -31,6 +32,7 @@ function About() {
   return (
     <>
       <div class="flex flex-col items-center pt-28 bg-black text-white min-h-screen px-4">
+        
         <div class="w-full max-w-4xl text-center">
           <h2 class="text-4xl md:text-5xl font-medium">ABOUT</h2>
           {/* <p class="mt-5 text-lg md:text-xl font-normal leading-6">

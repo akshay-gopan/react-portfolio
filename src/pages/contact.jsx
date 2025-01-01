@@ -52,7 +52,7 @@ function Contact() {
 
           <animated.div
             style={textAniamtion}
-            class="flex flex-col justify-center align-middle items-center sm:flex-row mt-10 gap-8 sm:gap-16 w-full max-w-3xl"
+            class="flex flex-row flex-wrap justify-center align-middle items-center mt-10 gap-4 w-full  sm:flex-row sm:gap-16"
           >
             <div class="w-full sm:w-auto flex justify-center">
               <Card1

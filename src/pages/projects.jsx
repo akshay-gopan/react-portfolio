@@ -39,7 +39,7 @@ function Projects() {
           {
             title: "Networkk",
             description:
-              "A MERN stack application connecting clients with local skilled laborers. Features include user profiles, job postings, advanced search, real-time notifications, and an admin dashboard for seamless job matching and management.",
+              "A full stack application connecting clients with local skilled laborers. Features include user profiles, job postings, advanced search, real-time notifications, and an admin dashboard for seamless job matching and management.",
             imgSrc: "images/networkk.jpg",
             demoLink: "#",
             githubLink: "https://github.com/Aaron-Thomas-Blessen/NETWORKK",
@@ -53,9 +53,27 @@ function Projects() {
             githubLink: "https://github.com/akshay-gopan/pdf-chat-streamlit",
           },
           {
+            title: "House Price Prediction",
+            description:
+              "A Python-based House Price Prediction Model uses machine learning to estimate property prices from features like location, size, and rooms. It leverages Pandas, Scikit-learn, and Matplotlib for data processing, training, and visualization, showcasing skills in predictive modeling and real estate analytics.",
+            imgSrc: "images/houseprice.jpg",
+            demoLink: "#",
+            githubLink:
+              "https://github.com/akshay-gopan/house-price-prediction-ml",
+          },
+          {
+            title: "Note Taking Application",
+            description:
+              "A note-taking app built with React Native and Firebase for storing and managing notes. Features include user authentication, real-time updates, and a clean, intuitive interface for creating, editing, and deleting notes.",
+            imgSrc: "images/note-app.png",
+            demoLink: "#",
+            githubLink:
+              "https://github.com/akshay-gopan/note-app-reactnative",
+          },
+          {
             title: "E-Commerce Platform",
             description:
-              "A robust application built with the MERN stack for seamless online shopping. Features include product listings, shopping cart functionality, user authentication, order management, and secure payment integration.",
+              "A robust application built with the React for seamless online shopping. Features include product listings, shopping cart functionality, user authentication, order management, and secure payment integration.",
             imgSrc: "images/e-commerce.jpg",
             demoLink: "#",
             githubLink: "https://github.com/akshay-gopan/e-commerce-site",
@@ -69,15 +87,7 @@ function Projects() {
             githubLink:
               "https://github.com/akshay-gopan/weather-app-internship",
           },
-          {
-            title: "House Price Prediction",
-            description:
-              "A Python-based House Price Prediction Model uses machine learning to estimate property prices from features like location, size, and rooms. It leverages Pandas, Scikit-learn, and Matplotlib for data processing, training, and visualization, showcasing skills in predictive modeling and real estate analytics.",
-            imgSrc: "images/houseprice.jpg",
-            demoLink: "#",
-            githubLink:
-              "https://github.com/akshay-gopan/house-price-prediction-ml",
-          },
+          
 
         ].map((project, index) => (
           <div

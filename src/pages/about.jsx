@@ -102,6 +102,8 @@ function About() {
                 "Firebase",
                 "Git",
                 "GitHub",
+                "Postman",
+                
               ].map((skill) => (
                 <p
                   key={skill}

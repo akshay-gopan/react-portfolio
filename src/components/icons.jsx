@@ -13,7 +13,7 @@ const Icons = () => {
     <>
       <animated.div
         style={iconAniamtion}
-        class=" flex flex-row gap-10 self-center mt-7"
+        class=" flex flex-row gap-10 self-center "
       >
         <div class=" rounded-full p-2 transition-all hover:scale-125 duration-300">
           <a href="https://github.com/akshay-gopan">

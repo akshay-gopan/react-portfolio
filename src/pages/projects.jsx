@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
+import Particle from "../components/particles";
 
 function Projects() {
   const imageAnimation = useSpring({
@@ -18,8 +19,9 @@ function Projects() {
   return (
     <>
       <div class="flex flex-col justify-center items-center pt-24 mt-4 bg-black text-white px-4">
+        <Particle />
         <div class="w-full max-w-4xl text-center">
-          <h2 class="text-4xl md:text-5xl font-medium">PROJECTS</h2>
+          <h2 class="text-center text-5xl md:text-6xl font-semibold bg-clip-text">PROJECTS</h2>
           <p class="mt-5 text-lg md:text-xl font-normal leading-6">
             Take a look at my projects to see how I apply my skills in web
             development and Python. Each one reflects my learning journey and
